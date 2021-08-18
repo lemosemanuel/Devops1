@@ -1,0 +1,15 @@
+name: Login, Build and Push Container Image to SWRk
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  push_to_registry:
+    name: Login, Build and Push Container Image to SWR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Configure app
+        run:  |
+          echo "${{ secrets.NPM_URL }}" > .npmrc
