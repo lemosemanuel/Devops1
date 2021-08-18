@@ -2,7 +2,7 @@ name: Login, Build and Push Container Image to SWR
 on:
   push:
     branches:
-      - master
+      - auto-build
     paths:
       - 'devops1/**'
     
