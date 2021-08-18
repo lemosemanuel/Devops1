@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - - 'packages/container/**'
+    
 
 jobs:
   push_to_registry:
