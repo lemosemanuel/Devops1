@@ -1,7 +1,7 @@
 name: Login, Build and Push Container Image to SWR
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
 
 jobs:
   push_to_registry:
