@@ -1,4 +1,4 @@
-name: Login, Build and Push Container Image to SWR
+name: Login, Build and Push Container Image to SWRk
 on:
   push:
     branches: [ develop ]
