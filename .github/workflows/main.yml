@@ -10,10 +10,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Configure app
-        run:  |
-          echo "${{ secrets.NPM_URL }}" > .npmrc
-          echo "${{ secrets.NPM_TOKEN }}" >> .npmrc
       
       - name: Login to Huawei SWR
         run: echo "${{ secrets.PRD_HC_DOCKER_PASSWORD }}" | docker login "${{ secrets.PRD_HC_DOCKER_IMAGE_REPO }}" --username "${{ secrets.PRD_HC_DOCKER_USERNAME }}" --password-stdin 
