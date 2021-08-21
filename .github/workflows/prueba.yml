@@ -1,8 +1,5 @@
 name: Login, Build and Push Container Image to SWR
-on:
-  push:
-    branches:
-      - master
+on: [pull_request, push]
 
 jobs:
   build:
