@@ -9,4 +9,4 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Lowercase Variables
-        run: echo "IHSACUSTOM_GITHUB_REPOSITORY=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
+        run: echo "${{ env.IHSACUSTOM_GITHUB_REPOSITORY}}":"$GITHUB_SHA"
